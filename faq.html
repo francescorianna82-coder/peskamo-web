@@ -1,1 +1,588 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FAQ PeskAMO — Domande frequenti sull'app, l'indice di pescosita', gli abbonamenti e la privacy." />
+  <title>FAQ — PeskAMO</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/legal.css" />
+  <link rel="stylesheet" href="css/faq.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="assets/peskamo-logo.png" alt="PeskAMO" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#features">Funzionalita'</a></li>
+      <li><a href="index.html#ecosistema">Suite</a></li>
+      <li><a href="abbonamenti.html">Abbonamenti</a></li>
+      <li><a href="index.html#contatti">Contatti</a></li>
+      <!-- EN — da abilitare quando il sito inglese sara' pronto
+      <li>
+        <a href="en/faq.html" class="lang-switch" aria-label="Switch to English">
+          <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="40" fill="#012169"/>
+            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
+            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
+            <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
+            <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
+          </svg>
+        </a>
+      </li>
+      -->
+    </ul>
+    <a href="index.html#hero" class="btn-cta">Scarica l'app</a>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══ CONTENUTO ══ -->
+  <main class="legal-main">
+    <div class="legal-container">
+
+      <div class="legal-header">
+        <a href="index.html">
+          <img src="assets/peskamo-logo.png" alt="PeskAMO" class="footer-logo-img" />
+        </a>
+        <h1>Domande Frequenti</h1>
+        <p class="legal-meta">Tutto quello che vuoi sapere su PeskAMO.</p>
+      </div>
+
+      <div class="legal-body">
+
+        <!-- ══ CATEGORIA 1 — L'APP ══ -->
+        <div class="legal-section">
+          <h2>L'app</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Cos'e' PeskAMO?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>PeskAMO e' un'app intelligente per la pesca sportiva e ricreativa. Calcola un indice di pescosita' basato su decine di parametri reali — meteo, mare, luna, biologia — e ti aiuta a scegliere il momento migliore per uscire. Include anche mappa degli spot, diario di pesca, statistiche e riconoscimento specie tramite intelligenza artificiale.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Su quali dispositivi funziona?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>PeskAMO e' disponibile su iPhone (iOS 15 o superiore) e Android (versione 8 o superiore). Puoi scaricarla gratuitamente dall'App Store o da Google Play.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              PeskAMO funziona senza connessione internet?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Per calcolare l'indice di pescosita' e scaricare le previsioni meteo e' necessaria una connessione internet. I tuoi spot e il diario di pesca sono invece sempre accessibili anche offline, poiche' salvati localmente sul dispositivo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              In quali zone d'Italia e' disponibile?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>PeskAMO Coast e' ottimizzata per la pesca dalla costa italiana. L'indice di pescosita' e le previsioni meteo marine sono disponibili su tutto il territorio nazionale, coste adriatiche, tirreniche, ioniche, liguri e sarde incluse.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Devo registrarmi per usare l'app?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. PeskAMO non richiede registrazione ne' creazione di un account. I tuoi dati vengono salvati in forma anonima tramite un identificativo generato automaticamente. Puoi usare l'app immediatamente dopo il download.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ══ CATEGORIA 2 — INDICE DI PESCOSITA' ══ -->
+        <div class="legal-section">
+          <h2>Indice di Pescosita'</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Come funziona l'indice di pescosita'?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>L'indice di pescosita' e' un punteggio da 0 a 100 calcolato dal nostro algoritmo proprietario. Analizza in tempo reale decine di parametri — condizioni meteo, stato del mare, fase lunare, venti, pressione atmosferica, temperatura dell'acqua e fattori biologici stagionali — e restituisce un valore che indica quanto siano favorevoli le condizioni per pescare.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Quali parametri considera l'algoritmo?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Tra i principali parametri considerati:</p>
+              <ul>
+                <li>Altezza e periodo delle onde</li>
+                <li>Direzione e velocita' del vento</li>
+                <li>Pressione atmosferica e variazioni</li>
+                <li>Temperatura dell'aria e dell'acqua</li>
+                <li>Fase lunare e maree</li>
+                <li>Copertura nuvolosa e precipitazioni</li>
+                <li>Stagionalita' biologica delle specie</li>
+                <li>Visibilita' e condizioni di luce</li>
+              </ul>
+              <p>Il piano Premium include un indice dettagliato con tutti e 6 i parametri principali visibili singolarmente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              L'indice garantisce che peschero'?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. L'indice di pescosita' e' un valore indicativo basato su dati statistici e ambientali. Fornisce un'indicazione attendibile delle condizioni favorevoli, ma la pesca dipende anche da fattori locali, tecnica, attrezzatura e fortuna. PeskAMO ti aiuta a scegliere il momento migliore — il resto dipende da te.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Con quale frequenza si aggiorna l'indice?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>L'indice si aggiorna ogni volta che apri l'app e sei connesso a internet. I dati meteo e marini vengono recuperati in tempo reale dai nostri fornitori — Open-Meteo e Stormglass — garantendo sempre informazioni aggiornate.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- ══ CATEGORIA 3 — METEO E DATI ══ -->
+        <div class="legal-section">
+          <h2>Meteo e Dati</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Da dove provengono i dati meteo?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>PeskAMO utilizza due fonti di dati principali:</p>
+              <ul>
+                <li><strong>Open-Meteo</strong> — previsioni meteo atmosferiche ad alta risoluzione, aggiornate ogni ora.</li>
+                <li><strong>Stormglass</strong> — dati meteo marini professionali: onde, correnti, temperatura del mare, visibilita'.</li>
+              </ul>
+              <p>Entrambi i servizi forniscono dati di qualita' professionale utilizzati anche in ambito nautico e scientifico.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Quanto sono accurate le previsioni?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Le previsioni a breve termine (24-48 ore) hanno un'accuratezza elevata. Oltre i 3 giorni l'affidabilita' diminuisce progressivamente, come per qualsiasi sistema di previsione meteorologica. Ti consigliamo di usare le previsioni a 7 giorni (disponibili con Premium) come orientamento generale e di verificare sempre le condizioni nelle ore precedenti all'uscita.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Fino a quanti giorni in anticipo posso vedere le previsioni?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Con il piano gratuito puoi visualizzare le previsioni meteo e marine fino a <strong>3 giorni</strong>. Con il piano Premium le previsioni si estendono fino a <strong>7 giorni</strong>, permettendoti di pianificare le uscite con largo anticipo.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ══ CATEGORIA 4 — SPOT E DIARIO ══ -->
+        <div class="legal-section">
+          <h2>Spot e Diario</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Quanti spot posso salvare?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Con il piano gratuito puoi salvare fino a <strong>3 spot</strong> sulla mappa. Con il piano Premium gli spot diventano <strong>illimitati</strong> — puoi salvare tutti i tuoi posti preferiti senza restrizioni.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              I miei spot sono visibili ad altri utenti?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. I tuoi spot sono completamente privati e visibili solo a te. PeskAMO non condivide le posizioni dei tuoi spot con altri utenti ne' con terzi. I tuoi segreti di pesca restano tuoi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Posso esportare i dati del mio diario?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Si'. La funzione di export dati e' disponibile con il piano <strong>Premium</strong>. Puoi esportare il tuo diario di pesca con tutte le sessioni, catture e statistiche in formato leggibile.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Perdo i dati se disinstallo l'app?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>I dati sono salvati sia localmente sul dispositivo che in forma anonima su Firebase. Se disinstalli e reinstalli l'app sullo stesso dispositivo, i dati vengono recuperati automaticamente. Se cambi dispositivo, ti consigliamo di esportare i dati prima della migrazione (funzione Premium).</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ══ CATEGORIA 5 — PREMIUM E ABBONAMENTI ══ -->
+        <div class="legal-section">
+          <h2>Premium e Abbonamenti</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Cosa include il piano Premium?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Il piano Premium include tutte le funzionalita' della versione gratuita piu':</p>
+              <ul>
+                <li>Indice di pescosita' dettagliato con 6 parametri visibili</li>
+                <li>Previsioni meteo e marine fino a 7 giorni</li>
+                <li>Spot illimitati sulla mappa</li>
+                <li>Riconoscimento specie ittiche tramite intelligenza artificiale</li>
+                <li>Consigli di pesca personalizzati basati sulla tua storia</li>
+                <li>Export dati del diario di pesca</li>
+                <li>Nessuna pubblicita'</li>
+              </ul>
+              <p>Disponibile in due formule: mensile a 2,99 €/mese o annuale a 1,99 €/mese (fatturato annualmente).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Come si attiva l'abbonamento Premium?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>L'abbonamento si attiva direttamente dall'app tramite la sezione Profilo o dal Paywall che appare quando tenti di accedere a una funzione Premium. Il pagamento avviene tramite App Store (iPhone) o Google Play (Android) con il metodo di pagamento associato al tuo account.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Posso disdire quando voglio?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Si'. Puoi disdire in qualsiasi momento dalle impostazioni del tuo account store:</p>
+              <ul>
+                <li><strong>iPhone/iPad:</strong> Impostazioni → Il tuo nome → Abbonamenti → PeskAMO → Cancella abbonamento</li>
+                <li><strong>Android:</strong> Play Store → Profilo → Pagamenti e abbonamenti → Abbonamenti → PeskAMO → Annulla</li>
+              </ul>
+              <p>La disdetta deve essere effettuata almeno 24 ore prima della scadenza del periodo corrente. Puoi continuare a usare Premium fino alla fine del periodo gia' pagato.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Come funziona il rinnovo automatico?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>L'abbonamento si rinnova automaticamente alla scadenza — ogni mese per il piano mensile, ogni anno per il piano annuale. Il costo viene addebitato automaticamente sul metodo di pagamento associato al tuo account App Store o Google Play. Riceverai una notifica prima del rinnovo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Come richiedo un rimborso?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>I rimborsi sono gestiti direttamente da Apple o Google secondo le loro politiche:</p>
+              <ul>
+                <li><strong>App Store:</strong> <a href="https://support.apple.com/it-it/118223" target="_blank">support.apple.com</a></li>
+                <li><strong>Google Play:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">support.google.com</a></li>
+              </ul>
+              <p>Per qualsiasi assistenza puoi anche scrivere a <a href="mailto:support@peskamo.it">support@peskamo.it</a>.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- ══ CATEGORIA 6 — PRIVACY E DATI ══ -->
+        <div class="legal-section">
+          <h2>Privacy e Dati</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              PeskAMO raccoglie dati personali?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>PeskAMO raccoglie esclusivamente dati anonimi di utilizzo — sessioni di pesca, catture, spot — non associati a nessuna identita' personale. L'unico dato personale raccolto e' l'email, e solo se decidi volontariamente di iscriverti alla newsletter o alla waitlist. Per tutti i dettagli consulta la nostra <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              La mia posizione GPS viene condivisa?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. La posizione GPS viene utilizzata esclusivamente sul tuo dispositivo per mostrare la mappa degli spot e calcolare l'indice di pescosita' nella tua zona. Non viene mai trasmessa a terzi ne' condivisa con altri utenti.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Come elimino i miei dati?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Puoi eliminare tutti i tuoi dati in qualsiasi momento dalla sezione Profilo dell'app. In alternativa puoi scrivere a <a href="mailto:support@peskamo.it">support@peskamo.it</a> e provvederemo alla cancellazione completa entro 30 giorni, in conformita' al GDPR.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ══ CATEGORIA 7 — PESKAMO SUITE ══ -->
+        <div class="legal-section">
+          <h2>PeskAMO Suite</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Cosa sono Sea, Lake e River?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sea, Lake e River sono i prossimi moduli della PeskAMO Suite — la famiglia di app dedicata a ogni ambiente di pesca:</p>
+              <ul>
+                <li><strong>PeskAMO Sea</strong> — pesca dalla barca e offshore</li>
+                <li><strong>PeskAMO Lake</strong> — pesca in lago e acque ferme</li>
+                <li><strong>PeskAMO River</strong> — pesca in fiume e acque correnti</li>
+              </ul>
+              <p>Ogni modulo avra' un algoritmo specifico calibrato per il proprio ambiente, con parametri e specie dedicati.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Quando arrivano i nuovi moduli?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>I moduli Sea, Lake e River sono attualmente in sviluppo. Non abbiamo ancora una data di rilascio definitiva. Iscriviti alla nostra newsletter o alla waitlist per essere il primo a sapere quando saranno disponibili.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Come mi iscrivo alla waitlist?
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Puoi iscriverti alla waitlist direttamente dall'app PeskAMO Coast — nella schermata di selezione ambiente trovi i moduli Sea, Lake e River con il pulsante per lasciare la tua email. In alternativa iscriviti alla nostra newsletter dal sito <a href="https://www.peskamo.com">www.peskamo.com</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ══ CONTATTI ══ -->
+        <div class="legal-section">
+          <h2>Non hai trovato la risposta?</h2>
+          <div class="legal-box">
+            <p>Scrivici direttamente — ti risponderemo entro 48 ore.<br />
+            <a href="mailto:support@peskamo.it">support@peskamo.it</a><br />
+            <a href="mailto:info@peskamo.it">info@peskamo.it</a><br />
+            <a href="https://www.peskamo.com">www.peskamo.com</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="legal-footer-nav">
+        <a href="privacy.html" class="btn-legal-nav">Privacy Policy</a>
+        <a href="termini.html" class="btn-legal-nav">Termini di Servizio</a>
+        <a href="abbonamenti.html" class="btn-legal-nav">Abbonamenti</a>
+        <a href="index.html" class="btn-legal-home">Torna alla Home</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col footer-logo">
+        <a href="index.html">
+          <img src="assets/peskamo-logo.png" alt="PeskAMO" class="footer-logo-img" />
+        </a>
+        <p class="footer-desc">L'app intelligente per scegliere il momento migliore per pescare.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Link Rapidi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#features">Funzionalita'</a></li>
+          <li><a href="index.html#ecosistema">Suite</a></li>
+          <li><a href="abbonamenti.html">Abbonamenti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Supporto</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="mailto:support@peskamo.it">Contatti</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="termini.html">Termini di utilizzo</a></li>
+          <li><a href="abbonamenti.html">Abbonamenti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Seguici</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-lang">
+          <span>Lingua:</span>
+          <a href="faq.html" class="active-lang">IT</a>
+          <!-- EN — da abilitare quando il sito inglese sara' pronto
+          <span>|</span>
+          <a href="en/faq.html">
+            <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="40" fill="#012169"/>
+              <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
+              <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
+              <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
+              <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
+            </svg>
+          </a>
+          -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 PeskAMO. Tutti i diritti riservati.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="termini.html">Termini di utilizzo</a>
+        <a href="abbonamenti.html">Abbonamenti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-answer').style.maxHeight = null;
+        openItem.querySelector('.faq-icon').style.transform = '';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+</body>
+</html>
 
