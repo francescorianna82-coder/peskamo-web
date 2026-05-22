@@ -97,7 +97,7 @@ nav.scrolled { background: rgba(5,16,24,0.99); border-color: rgba(0,180,216,0.15
 #ecosistema { padding: 90px 5% 70px; background: var(--bg); scroll-margin-top: 70px; }
 .section-title { text-align: center; margin-bottom: 0.5rem; }
 .section-title-suite { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin-bottom: 0.5rem; }
-.section-title-suite img { height: 90px; width: auto; object-fit: contain; }
+.section-title-suite img { height: 120px; width: auto; object-fit: contain; }
 .section-title-suite .suite-label { font-size: clamp(1.6rem, 3vw, 2rem); font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--white); }
 .section-title p { color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem; text-align: center; }
 .eco-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 1100px; margin: 2.5rem auto 1.5rem; }
