@@ -1,1 +1,25 @@
+/* ============================================================
+   PESKAMO — faq.css
+   ============================================================ */
+
+.faq-item { border: 1px solid rgba(0,180,216,0.1); border-radius: var(--radius); margin-bottom: 0.6rem; overflow: hidden; transition: border-color 0.2s; }
+.faq-item.open { border-color: rgba(0,180,216,0.3); }
+.faq-question { width: 100%; background: rgba(0,180,216,0.04); border: none; color: var(--white); font-family: var(--font); font-size: 0.95rem; font-weight: 600; padding: 1.1rem 1.4rem; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background 0.2s; }
+.faq-question:hover { background: rgba(0,180,216,0.08); }
+.faq-item.open .faq-question { background: rgba(0,180,216,0.08); color: var(--primary); }
+.faq-icon { flex-shrink: 0; transition: transform 0.3s ease; color: var(--text-muted); }
+.faq-item.open .faq-icon { color: var(--primary); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.faq-answer p { padding: 0 1.4rem 1.2rem; font-size: 0.92rem; color: #ccd8e0; line-height: 1.7; margin: 0; }
+.faq-answer p + p { padding-top: 0; }
+.faq-answer ul { padding: 0 1.4rem 1.2rem 2.8rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.faq-answer ul li { font-size: 0.92rem; color: #ccd8e0; line-height: 1.6; }
+.faq-answer a { color: var(--primary); text-decoration: none; }
+.faq-answer a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .faq-question { font-size: 0.88rem; padding: 1rem 1.1rem; }
+  .faq-answer p { padding: 0 1.1rem 1rem; }
+  .faq-answer ul { padding: 0 1.1rem 1rem 2.2rem; }
+}
 
