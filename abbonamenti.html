@@ -15,17 +15,25 @@
   <!-- ══ NAVBAR ══ -->
   <nav id="navbar">
     <a href="index.html" class="nav-logo-wrap">
-      <span class="logo">
-        <span class="pesk">Pesk</span><span class="a">A</span><span class="m">M</span><span class="o">O</span>
-      </span>
-      <span class="logo-sub">Coast</span>
+      <img src="assets/peskamo-logo.png" alt="PeskAMO" />
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#features">Funzionalita'</a></li>
       <li><a href="index.html#ecosistema">Suite</a></li>
+      <li><a href="abbonamenti.html" class="active">Abbonamenti</a></li>
       <li><a href="index.html#contatti">Contatti</a></li>
-      <li><a href="en/subscriptions.html" class="lang-switch">EN</a></li>
+      <li>
+        <a href="en/subscriptions.html" class="lang-switch" aria-label="Switch to English">
+          <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="40" fill="#012169"/>
+            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
+            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
+            <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
+            <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
+          </svg>
+        </a>
+      </li>
     </ul>
     <a href="index.html#hero" class="btn-cta">Scarica l'app</a>
     <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
@@ -39,10 +47,9 @@
 
       <!-- HEADER -->
       <div class="legal-header">
-        <a href="index.html" class="logo legal-logo">
-          <span class="pesk">Pesk</span><span class="a">A</span><span class="m">M</span><span class="o">O</span>
+        <a href="index.html">
+          <img src="assets/peskamo-logo.png" alt="PeskAMO" class="footer-logo-img" />
         </a>
-        <div class="abb-premium-chip">PREMIUM</div>
         <h1>Abbonamenti</h1>
         <p class="legal-meta">Sblocca tutte le funzionalita' di PeskAMO e pesca nel momento giusto, sempre.</p>
       </div>
@@ -53,6 +60,7 @@
         <!-- PIANO GRATUITO -->
         <div class="abb-card">
           <div class="abb-card-header">
+            <span class="plan-chip free">FREE</span>
             <span class="abb-plan-name">Gratuito</span>
             <div class="abb-price">
               <span class="abb-price-amount">0</span>
@@ -81,6 +89,7 @@
         <div class="abb-card abb-card-featured">
           <div class="abb-badge-top">Piu' popolare</div>
           <div class="abb-card-header">
+            <span class="plan-chip premium">PREMIUM</span>
             <span class="abb-plan-name">Premium Mensile</span>
             <div class="abb-price">
               <span class="abb-price-amount">2,99</span>
@@ -110,6 +119,7 @@
         <div class="abb-card abb-card-annual">
           <div class="abb-badge-top abb-badge-save">Risparmi 40%</div>
           <div class="abb-card-header">
+            <span class="plan-chip premium">PREMIUM</span>
             <span class="abb-plan-name">Premium Annuale</span>
             <div class="abb-price">
               <span class="abb-price-amount">1,99</span>
@@ -217,10 +227,9 @@
   <footer>
     <div class="footer-top">
       <div class="footer-col footer-logo">
-        <a href="index.html" class="logo">
-          <span class="pesk">Pesk</span><span class="a">A</span><span class="m">M</span><span class="o">O</span>
+        <a href="index.html">
+          <img src="assets/peskamo-logo.png" alt="PeskAMO" class="footer-logo-img" />
         </a>
-        <span class="logo-sub" style="padding-left:0; margin-top:4px;">Coast</span>
         <p class="footer-desc">L'app intelligente per scegliere il momento migliore per pescare.</p>
       </div>
       <div class="footer-col">
@@ -264,11 +273,19 @@
             </svg>
           </a>
         </div>
-        <div class="footer-lang" style="margin-top:16px;">
-          <span style="color:#556677; font-size:13px; margin-right:8px;">Lingua:</span>
-          <a href="abbonamenti.html" style="color:#00B4D8; font-size:13px; font-weight:600; margin-right:6px;">IT</a>
-          <span style="color:#556677; font-size:13px;">|</span>
-          <a href="en/subscriptions.html" style="color:#556677; font-size:13px; margin-left:6px;">EN</a>
+        <div class="footer-lang">
+          <span>Lingua:</span>
+          <a href="abbonamenti.html" class="active-lang">IT</a>
+          <span>|</span>
+          <a href="en/subscriptions.html">
+            <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="40" fill="#012169"/>
+              <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
+              <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
+              <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
+              <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
