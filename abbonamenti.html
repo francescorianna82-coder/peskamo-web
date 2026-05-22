@@ -1,1 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abbonamenti PeskAMO Premium — Funzionalità, prezzi e condizioni." />
+  <title>Abbonamenti — PeskAMO</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/legal.css" />
+  <link rel="stylesheet" href="css/abbonamenti.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo-wrap">
+      <span class="logo">
+        <span class="pesk">Pesk</span><span class="a">A</span><span class="m">M</span><span class="o">O</span>
+      </span>
+      <span class="logo-sub">Coast</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#features">App</a></li>
+      <li><a href="index.html#features">Funzionalità</a></li>
+      <li><a href="index.html#ecosistema">Ecosistema</a></li>
+      <li><a href="index.html#contatti">Contatti</a></li>
+    </ul>
+    <a href="index.html#hero" class="btn-cta">Scarica l'app</a>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══ CONTENUTO ══ -->
+  <main class="legal-main">
+    <div class="legal-container abb-container">
+
+      <!-- HEADER -->
+      <div class="legal-header">
+        <a href="index.html" class="logo legal-logo">
+          <span class="pesk">Pesk</span><span class="a">A</span><span class="m">M</span><span class="o">O</span>
+        </a>
+        <div class="abb-premium-chip">PREMIUM</div>
+        <h1>Abbonamenti</h1>
+        <p class="legal-meta">Sblocca tutte le funzionalità di PeskAMO e pesca nel momento giusto, sempre.</p>
+      </div>
+
+      <!-- PIANI -->
+      <div class="abb-plans">
+
+        <!-- PIANO GRATUITO -->
+        <div class="abb-card">
+          <div class="abb-card-header">
+            <span class="abb-plan-name">Gratuito</span>
+            <div class="abb-price">
+              <span class="abb-price-amount">0</span>
+              <span class="abb-price-currency">€</span>
+              <span class="abb-price-period">/ sempre</span>
+            </div>
+          </div>
+          <ul class="abb-features">
+            <li class="included">Indice di pescosità base</li>
+            <li class="included">Previsioni meteo 3 giorni</li>
+            <li class="included">3 spot salvati</li>
+            <li class="included">Diario di pesca base</li>
+            <li class="included">Statistiche essenziali</li>
+            <li class="excluded">Indice dettagliato (6 parametri)</li>
+            <li class="excluded">Previsioni meteo 7 giorni</li>
+            <li class="excluded">Spot illimitati</li>
+            <li class="excluded">Riconoscimento specie AI</li>
+            <li class="excluded">Consigli personalizzati AI</li>
+            <li class="excluded">Export dati diario</li>
+            <li class="excluded">Nessuna pubblicità</li>
+          </ul>
+          <a href="index.html#hero" class="abb-btn-free">Scarica gratis</a>
+        </div>
+
+        <!-- PIANO PREMIUM MENSILE -->
+        <div class="abb-card abb-card-featured">
+          <div class="abb-badge-top">Piu popolare</div>
+          <div class="abb-card-header">
+            <span class="abb-plan-name">Premium Mensile</span>
+            <div class="abb-price">
+              <span class="abb-price-amount">2,99</span>
+              <span class="abb-price-currency">€</span>
+              <span class="abb-price-period">/ mese</span>
+            </div>
+            <p class="abb-price-note">Rinnovo automatico. Disdici quando vuoi.</p>
+          </div>
+          <ul class="abb-features">
+            <li class="included">Indice di pescosità base</li>
+            <li class="included">Previsioni meteo 3 giorni</li>
+            <li class="included">3 spot salvati</li>
+            <li class="included">Diario di pesca base</li>
+            <li class="included">Statistiche essenziali</li>
+            <li class="included">Indice dettagliato (6 parametri)</li>
+            <li class="included">Previsioni meteo 7 giorni</li>
+            <li class="included">Spot illimitati</li>
+            <li class="included">Riconoscimento specie AI</li>
+            <li class="included">Consigli personalizzati AI</li>
+            <li class="included">Export dati diario</li>
+            <li class="included">Nessuna pubblicità</li>
+          </ul>
+          <a href="index.html#hero" class="abb-btn-premium">Inizia ora</a>
+        </div>
+
+        <!-- PIANO PREMIUM ANNUALE -->
+        <div class="abb-card abb-card-annual">
+          <div class="abb-badge-top abb-badge-save">Risparmi 40%</div>
+          <div class="abb-card-header">
+            <span class="abb-plan-name">Premium Annuale</span>
+            <div class="abb-price">
+              <span class="abb-price-amount">1,99</span>
+              <span class="abb-price-currency">€</span>
+              <span class="abb-price-period">/ mese</span>
+            </div>
+            <p class="abb-price-note">Fatturato annualmente (23,88 €/anno). Rinnovo automatico.</p>
+          </div>
+          <ul class="abb-features">
+            <li class="included">Indice di pescosità base</li>
+            <li class="included">Previsioni meteo 3 giorni</li>
+            <li class="included">3 spot salvati</li>
+            <li class="included">Diario di pesca base</li>
+            <li class="included">Statistiche essenziali</li>
+            <li class="included">Indice dettagliato (6 parametri)</li>
+            <li class="included">Previsioni meteo 7 giorni</li>
+            <li class="included">Spot illimitati</li>
+            <li class="included">Riconoscimento specie AI</li>
+            <li class="included">Consigli personalizzati AI</li>
+            <li class="included">Export dati diario</li>
+            <li class="included">Nessuna pubblicità</li>
+          </ul>
+          <a href="index.html#hero" class="abb-btn-premium">Inizia ora</a>
+        </div>
+
+      </div>
+
+      <!-- NOTE LEGALI -->
+      <div class="legal-body" style="margin-top: 3rem;">
+
+        <div class="legal-section">
+          <h2>Come funziona l'abbonamento</h2>
+          <ul class="legal-list">
+            <li>L'abbonamento Premium si attiva direttamente dall'app tramite App Store (Apple) o Google Play (Android)</li>
+            <li>Il pagamento viene addebitato sull'account App Store o Google Play al momento dell'acquisto</li>
+            <li>L'abbonamento si rinnova automaticamente alla scadenza salvo disdetta</li>
+            <li>Puoi disdire in qualsiasi momento dalle impostazioni del tuo account App Store o Google Play</li>
+            <li>La disdetta deve essere effettuata almeno 24 ore prima della scadenza del periodo corrente</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>Gestione e cancellazione</h2>
+          <div class="legal-box">
+            <p><strong>Su iPhone e iPad (App Store):</strong><br />
+            Impostazioni &rarr; Il tuo nome &rarr; Abbonamenti &rarr; PeskAMO &rarr; Cancella abbonamento</p>
+          </div>
+          <div class="legal-box" style="margin-top: 0.8rem;">
+            <p><strong>Su Android (Google Play):</strong><br />
+            Play Store &rarr; Profilo &rarr; Pagamenti e abbonamenti &rarr; Abbonamenti &rarr; PeskAMO &rarr; Annulla</p>
+          </div>
+        </div>
+
+        <div class="legal-section">
+          <h2>Rimborsi</h2>
+          <p>I rimborsi sono gestiti direttamente da Apple (App Store) o Google (Play Store) secondo le rispettive politiche. PeskAMO non gestisce direttamente i rimborsi per gli acquisti effettuati tramite gli store.</p>
+          <ul class="legal-list">
+            <li>Rimborsi App Store: <a href="https://support.apple.com/it-it/118223" target="_blank">support.apple.com</a></li>
+            <li>Rimborsi Google Play: <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">support.google.com</a></li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>Prezzi e disponibilità</h2>
+          <p>I prezzi indicati sono in Euro e includono le tasse applicabili. PeskAMO si riserva il diritto di modificare i prezzi con un preavviso di almeno 30 giorni comunicato tramite notifica nell'app o via email.</p>
+          <p>Il servizio Premium è disponibile in tutti i paesi dove App Store e Google Play sono attivi.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Prova gratuita</h2>
+          <p>Periodicamente PeskAMO può offrire periodi di prova gratuita del Premium. Al termine del periodo di prova, l'abbonamento si converte automaticamente in abbonamento a pagamento salvo disdetta prima della scadenza della prova.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Contatti</h2>
+          <div class="legal-box">
+            <p>Per assistenza sugli abbonamenti:<br />
+            <a href="mailto:support@peskamo.it">support@peskamo.it</a><br />
+            <a href="mailto:info@peskamo.it">info@peskamo.it</a><br />
+            <a href="https://www.peskamo.com">www.peskamo.com</a></p>
+          </div>
+        </div>
+
+        <div class="legal-section">
+          <h2>Documenti correlati</h2>
+          <ul class="legal-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="termini.html">Termini di Servizio</a></li>
+            <li><a href="https://www.apple.com/legal/internet-services/itunes/it/terms.html" target="_blank">Termini Apple Media Services</a></li>
+            <li><a href="https://play.google.com/intl/it/about/play-terms/" target="_blank">Termini Google Play</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="legal-footer-nav">
+        <a href="privacy.html" class="btn-legal-nav">Privacy Policy</a>
+        <a href="termini.html" class="btn-legal-nav">Termini di Servizio</a>
+        <a href="index.html" class="btn-legal-home">Torna alla Home</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col footer-logo">
+        <a href="index.html" class="logo">
+          <span class="pesk">Pesk</span><span class="a">A</span><span class="m">M</span><span class="o">O</span>
+        </a>
+        <p class="footer-desc">L'app intelligente per scegliere il momento migliore per pescare.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram">&#128247;</a>
+          <a href="#" class="social-icon" aria-label="Facebook">&#128100;</a>
+          <a href="#" class="social-icon" aria-label="YouTube">&#9654;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Link Rapidi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#features">App</a></li>
+          <li><a href="index.html#features">Funzionalità</a></li>
+          <li><a href="index.html#ecosistema">Ecosistema</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Supporto</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="mailto:support@peskamo.it">Contatti</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="termini.html">Termini di utilizzo</a></li>
+          <li><a href="abbonamenti.html">Abbonamenti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Seguici</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram">&#128247;</a>
+          <a href="#" class="social-icon" aria-label="Facebook">&#128100;</a>
+          <a href="#" class="social-icon" aria-label="YouTube">&#9654;</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 PeskAMO. Tutti i diritti riservati.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="termini.html">Termini di utilizzo</a>
+        <a href="abbonamenti.html">Abbonamenti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
 
