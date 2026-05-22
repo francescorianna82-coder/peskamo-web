@@ -249,8 +249,7 @@ footer { padding: 70px 5% 30px; background: var(--bg-deep); border-top: 1px soli
 }
 .eco-img-top { position: relative; z-index: 2; display: flex; align-items: center; }
 .eco-img-top img { height: 32px; width: auto; object-fit: contain; filter: brightness(1.1) drop-shadow(0 1px 4px rgba(0,0,0,0.4)); }
-.eco-img-bottom { position: relative; z-index: 2; display: flex; align-items: center; }
-.eco-img-bottom img { height: 56px; width: auto; object-fit: contain; filter: brightness(1.1) drop-shadow(0 1px 4px rgba(0,0,0,0.4)); }
+
 
 /* ══ NAVBAR LOGO IMG ══ */
 .nav-logo-wrap img { height: 38px; width: auto; object-fit: contain; display: block; }
