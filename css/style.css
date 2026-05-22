@@ -108,7 +108,7 @@ nav.scrolled { background: rgba(5,16,24,0.99); border-color: rgba(0,180,216,0.15
 .eco-img-top { position: relative; z-index: 2; display: flex; align-items: center; }
 .eco-img-top img { height: 32px; width: auto; object-fit: contain; filter: brightness(1.1) drop-shadow(0 1px 4px rgba(0,0,0,0.4)); }
 .eco-img-bottom { position: relative; z-index: 2; display: flex; align-items: center; }
-.eco-img-bottom img { height: 28px; width: auto; object-fit: contain; filter: brightness(1.1) drop-shadow(0 1px 4px rgba(0,0,0,0.4)); }
+.eco-img-bottom img { height: 56px; width: auto; object-fit: contain; filter: brightness(1.1) drop-shadow(0 1px 4px rgba(0,0,0,0.4)); }
 .eco-card-body { padding: 1rem 1.2rem 1.4rem; flex: 1; display: flex; flex-direction: column; }
 .eco-card-body p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; flex: 1; line-height: 1.5; }
 .btn-available { background: var(--primary); color: #051018; font-weight: 700; padding: 11px; border-radius: 50px; text-align: center; text-decoration: none; font-size: 0.85rem; display: block; transition: opacity 0.2s; }
