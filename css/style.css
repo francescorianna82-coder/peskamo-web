@@ -234,3 +234,7 @@ footer { padding: 70px 5% 30px; background: var(--bg-deep); border-top: 1px soli
   position: relative;
   z-index: 2;
 }
+/* ══ FIX PHONE TEXT ══ */
+.phone { overflow: hidden; }
+.phone span { display: none; }
+.phone img { width: 100%; height: 100%; object-fit: cover; border-radius: 34px; display: block; }
