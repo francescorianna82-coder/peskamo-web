@@ -18,20 +18,30 @@ document.querySelectorAll('.nav-links a').forEach(function(link) {
   });
 });
 
+// Chiudi menu cliccando fuori
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById('navLinks');
+  const hamburger = document.getElementById('hamburger');
+  if (!nav || !hamburger) return;
+  if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+    nav.classList.remove('open');
+    hamburger.classList.remove('active');
+  }
+});
+
 // ── NAVBAR SCROLL EFFECT ──
 window.addEventListener('scroll', function() {
-  const nav = document.getElementById('navbar');
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
   if (window.scrollY > 40) {
-    nav.style.background = 'rgba(5,16,24,0.98)';
-    nav.style.borderBottom = '1px solid rgba(0,180,216,0.15)';
+    navbar.classList.add('scrolled');
   } else {
-    nav.style.background = 'rgba(5,16,24,0.92)';
-    nav.style.borderBottom = '1px solid rgba(0,180,216,0.08)';
+    navbar.classList.remove('scrolled');
   }
 });
 
 // ── ACTIVE NAV LINK ON SCROLL ──
-const sections = document.querySelectorAll('section[id]');
+const sections = document.querySelectorAll('section[id], footer[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', function() {
@@ -44,20 +54,23 @@ window.addEventListener('scroll', function() {
   });
   navLinks.forEach(function(link) {
     link.classList.remove('active');
-    if (link.getAttribute('href') === '#' + current) {
+    const href = link.getAttribute('href');
+    if (href === '#' + current || href === 'index.html#' + current) {
       link.classList.add('active');
     }
   });
 });
 
-// ── SMOOTH SCROLL ──
+// ── SMOOTH SCROLL CON OFFSET NAVBAR ──
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   anchor.addEventListener('click', function(e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    const targetId = this.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    e.preventDefault();
+    const offset = 80;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
   });
 });
 
@@ -109,6 +122,7 @@ const observer = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.1 });
@@ -117,4 +131,3 @@ document.querySelectorAll('.feature-item, .eco-card').forEach(function(el) {
   el.classList.add('fade-in');
   observer.observe(el);
 });
-
