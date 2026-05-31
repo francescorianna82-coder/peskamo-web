@@ -18,21 +18,10 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#features">Funzionalita'</a></li>
+      <li><a href="index.html#features">Funzionalità</a></li>
       <li><a href="index.html#ecosistema">Suite</a></li>
       <li><a href="abbonamenti.html">Abbonamenti</a></li>
       <li><a href="index.html#contatti">Contatti</a></li>
-      <li>
-        <a href="en/privacy.html" class="lang-switch" aria-label="Switch to English">
-          <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="40" fill="#012169"/>
-            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
-            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
-            <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
-            <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
-          </svg>
-        </a>
-      </li>
     </ul>
     <a href="index.html#hero" class="btn-cta">Scarica l'app</a>
     <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
@@ -60,7 +49,7 @@
 
         <div class="legal-section">
           <h2>1. Titolare del trattamento</h2>
-          <p>Il titolare del trattamento dei dati personali e':</p>
+          <p>Il titolare del trattamento dei dati personali è:</p>
           <div class="legal-box">
             <p><strong>PeskAMO</strong><br />
             Email: <a href="mailto:info@peskamo.it">info@peskamo.it</a><br />
@@ -73,21 +62,23 @@
           <h2>2. Dati raccolti</h2>
           <p>L'app PeskAMO raccoglie le seguenti categorie di dati:</p>
           <ul class="legal-list">
-            <li><strong>Dati di utilizzo anonimi</strong> — sessioni di pesca, catture registrate, spot salvati. Non sono associati a nessuna identita' personale.</li>
-            <li><strong>Posizione GPS</strong> — utilizzata esclusivamente per mostrare la mappa degli spot e calcolare l'indice di pescosita' locale. Non viene trasmessa a terzi.</li>
+            <li><strong>Dati di utilizzo anonimi</strong> — sessioni di pesca, catture registrate, spot salvati. Non sono associati a nessuna identità personale.</li>
+            <li><strong>Posizione GPS</strong> — utilizzata esclusivamente per mostrare la mappa degli spot e calcolare l'indice di pescosità locale. Non viene trasmessa a terzi.</li>
             <li><strong>Dati meteo e marini</strong> — recuperati da servizi terzi (Open-Meteo, Stormglass) in base alla posizione selezionata.</li>
             <li><strong>Email</strong> — solo se l'utente si iscrive alla newsletter o alla waitlist. Non utilizzata per altri scopi.</li>
-            <li><strong>Identificativo anonimo Firebase</strong> — generato automaticamente per sincronizzare i dati dell'app senza richiedere registrazione.</li>
+            <li><strong>Dati di autenticazione</strong> — se l'utente accede con Apple Sign In o Google Sign In, vengono raccolti nome e email esclusivamente per identificare l'account. Non vengono condivisi con terzi.</li>
+            <li><strong>Identificativo anonimo Firebase</strong> — generato automaticamente per sincronizzare i dati dell'app senza richiedere registrazione obbligatoria.</li>
           </ul>
         </div>
 
         <div class="legal-section">
-          <h2>3. Finalita' del trattamento</h2>
+          <h2>3. Finalità del trattamento</h2>
           <p>I dati raccolti sono utilizzati esclusivamente per:</p>
           <ul class="legal-list">
-            <li>Fornire le funzionalita' dell'app (indice di pesca, meteo, spot, diario)</li>
-            <li>Migliorare l'algoritmo di calcolo dell'indice di pescosita'</li>
-            <li>Inviare aggiornamenti e novita' agli iscritti alla newsletter (solo con consenso esplicito)</li>
+            <li>Fornire le funzionalità dell'app (indice di pesca, meteo, spot, diario)</li>
+            <li>Migliorare l'algoritmo di calcolo dell'indice di pescosità PMFI</li>
+            <li>Gestire l'accesso agli abbonamenti Premium tramite RevenueCat</li>
+            <li>Inviare aggiornamenti e novità agli iscritti alla newsletter (solo con consenso esplicito)</li>
             <li>Garantire il corretto funzionamento tecnico dell'applicazione</li>
           </ul>
         </div>
@@ -110,7 +101,7 @@
               <thead>
                 <tr>
                   <th>Servizio</th>
-                  <th>Finalita'</th>
+                  <th>Finalità</th>
                   <th>Privacy</th>
                 </tr>
               </thead>
@@ -129,6 +120,11 @@
                   <td>Stormglass</td>
                   <td>Dati meteo marini</td>
                   <td><a href="https://stormglass.io/terms-and-conditions/" target="_blank">Link</a></td>
+                </tr>
+                <tr>
+                  <td>RevenueCat</td>
+                  <td>Gestione abbonamenti Premium</td>
+                  <td><a href="https://www.revenuecat.com/privacy" target="_blank">Link</a></td>
                 </tr>
                 <tr>
                   <td>Formspree</td>
@@ -152,17 +148,17 @@
 
         <div class="legal-section">
           <h2>6. Conservazione dei dati</h2>
-          <p>I dati anonimi di utilizzo sono conservati finche' l'utente non elimina l'app o richiede la cancellazione. Le email degli iscritti sono conservate fino alla disiscrizione. Non conserviamo dati personali oltre il necessario.</p>
+          <p>I dati anonimi di utilizzo sono conservati finché l'utente non elimina l'app o richiede la cancellazione. Le email degli iscritti sono conservate fino alla disiscrizione. Non conserviamo dati personali oltre il necessario.</p>
         </div>
 
         <div class="legal-section">
           <h2>7. Diritti dell'utente</h2>
-          <p>In conformita' al GDPR (Regolamento UE 2016/679), hai il diritto di:</p>
+          <p>In conformità al GDPR (Regolamento UE 2016/679), hai il diritto di:</p>
           <ul class="legal-list">
             <li>Accedere ai tuoi dati personali</li>
             <li>Richiedere la rettifica o la cancellazione</li>
             <li>Opporti al trattamento</li>
-            <li>Richiedere la portabilita' dei dati</li>
+            <li>Richiedere la portabilità dei dati</li>
             <li>Revocare il consenso in qualsiasi momento</li>
           </ul>
           <p style="margin-top:1rem;">Per esercitare i tuoi diritti scrivi a: <a href="mailto:support@peskamo.it">support@peskamo.it</a></p>
@@ -180,7 +176,7 @@
 
         <div class="legal-section">
           <h2>10. Modifiche alla Privacy Policy</h2>
-          <p>Ci riserviamo il diritto di aggiornare questa Privacy Policy. In caso di modifiche sostanziali, gli utenti registrati saranno notificati via email. La versione aggiornata sara' sempre disponibile su <a href="https://www.peskamo.com/privacy">www.peskamo.com/privacy</a>.</p>
+          <p>Ci riserviamo il diritto di aggiornare questa Privacy Policy. In caso di modifiche sostanziali, gli utenti registrati saranno notificati via email. La versione aggiornata sarà sempre disponibile su <a href="https://www.peskamo.com/privacy">www.peskamo.com/privacy</a>.</p>
         </div>
 
         <div class="legal-section">
@@ -193,9 +189,11 @@
         </div>
 
       </div>
+
       <div class="legal-footer-nav">
         <a href="termini.html" class="btn-legal-nav">Termini di Servizio</a>
         <a href="abbonamenti.html" class="btn-legal-nav">Abbonamenti</a>
+        <a href="faq.html" class="btn-legal-nav">FAQ</a>
         <a href="index.html" class="btn-legal-home">Torna alla Home</a>
       </div>
 
@@ -215,7 +213,7 @@
         <h4>Link Rapidi</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#features">Funzionalita'</a></li>
+          <li><a href="index.html#features">Funzionalità</a></li>
           <li><a href="index.html#ecosistema">Suite</a></li>
           <li><a href="abbonamenti.html">Abbonamenti</a></li>
         </ul>
@@ -255,16 +253,6 @@
         <div class="footer-lang">
           <span>Lingua:</span>
           <a href="privacy.html" class="active-lang">IT</a>
-          <span>|</span>
-          <a href="en/privacy.html">
-            <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-              <rect width="60" height="40" fill="#012169"/>
-              <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
-              <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
-              <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
-              <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
-            </svg>
-          </a>
         </div>
       </div>
     </div>
