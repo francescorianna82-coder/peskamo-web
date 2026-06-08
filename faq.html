@@ -459,4 +459,113 @@
         <div class="legal-section">
           <h2>Non hai trovato la risposta?</h2>
           <div class="legal-box">
-            <p>Scrivici direttamente — ti risponderemo entro 48 ore.
+            <p>Scrivici direttamente — ti risponderemo entro 48 ore.            <br />
+            <a href="mailto:support@peskamo.it">support@peskamo.it</a><br />
+            <a href="mailto:info@peskamo.it">info@peskamo.it</a><br />
+            <a href="https://www.peskamo.com">www.peskamo.com</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="legal-footer-nav">
+        <a href="privacy.html" class="btn-legal-nav">Privacy Policy</a>
+        <a href="termini.html" class="btn-legal-nav">Termini di Servizio</a>
+        <a href="abbonamenti.html" class="btn-legal-nav">Abbonamenti</a>
+        <a href="index.html" class="btn-legal-home">Torna alla Home</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col footer-logo">
+        <a href="index.html">
+          <img src="assets/peskamo-logo.png" alt="PeskAMO" class="footer-logo-img" />
+        </a>
+        <p class="footer-desc">L'app intelligente per scegliere il momento migliore per pescare.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Link Rapidi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#features">Funzionalità</a></li>
+          <li><a href="index.html#ecosistema">Suite</a></li>
+          <li><a href="abbonamenti.html">Abbonamenti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Supporto</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Supporto</a></li>
+          <li><a href="mailto:support@peskamo.it">Contatti</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="termini.html">Termini di utilizzo</a></li>
+          <li><a href="abbonamenti.html">Abbonamenti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Seguici</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-lang">
+          <span>Lingua:</span>
+          <a href="faq.html" class="active-lang">IT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 PeskAMO. Tutti i diritti riservati.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="termini.html">Termini di utilizzo</a>
+        <a href="abbonamenti.html">Abbonamenti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-answer').style.maxHeight = null;
+        openItem.querySelector('.faq-icon').style.transform = '';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+</body>
+</html>
+
